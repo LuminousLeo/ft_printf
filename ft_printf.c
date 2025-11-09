@@ -32,8 +32,10 @@ int	find_type(const char format, va_list *args)
 		counter += ft_hexu_convert_fd(va_arg(*args, unsigned int), 1);
 	else if (format == '%')
 		counter += printf_percent('%', 1);
+	/*
 	else if (format == 'p')
 		counter += printf_ptr(va_arg(*args, unsigned long long), 1);
+	*/
 	return (counter);
 }
 
@@ -65,6 +67,7 @@ int	ft_printf(const char *format, ...)
 	return (counter);
 }
 
+/*
 int main(void)
 {
 	int				dec_int = 42;
@@ -73,7 +76,6 @@ int main(void)
 	char			*str = NULL;
 	unsigned int	unsigned_int = -50;
 
-	/*
 	printf("\n");
 	printf("%i\n", ft_printf("first char: %c; second char: %c\n", c, c));
 	printf("\n");
@@ -88,9 +90,9 @@ int main(void)
 	printf("%i\n", ft_printf("upper hex: %X\n", hex_convert));
 	printf("\n");
 	printf("%i\n", ft_printf("percent: %%%%\n"));
-	*/
 	//printf("\n");
 	//printf("%p\n", &dec_int);
 	ft_printf("%p\n", &dec_int);
 	printf("\n");
 }
+*/

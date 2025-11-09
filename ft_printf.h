@@ -17,7 +17,7 @@
 # include "libft/libft.h"
 
 int		printf_nbr(int nbr, int fd);
-int		printf_ptr(unsigned long long ptr, int fd);
+//int		printf_ptr(unsigned long long ptr, int fd);
 int		printf_str(char *str, int fd);
 int		printf_percent(char c, int fd);
 int		printf_char(const char c, int fd);
