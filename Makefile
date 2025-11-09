@@ -5,7 +5,7 @@ LIBFT_PATH = ./libft
 
 SRCS = ft_printf.c ft_putnbru_fd.c printf_char.c \
 	   printf_str.c printf_nbr.c ft_hexl_convert_fd.c \
-	   ft_hexu_convert_fd.c printf_percent.c
+	   ft_hexu_convert_fd.c printf_percent.c printf_ptr.c
 
 OBJS = $(SRCS:.c=.o)
 
